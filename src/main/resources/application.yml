@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:C:/Users/40026701/test;AUTO_SERVER=TRUE;DB_CLOSE_DELAY=-1;DATABASE_TO_UPPER=false;AUTO_SERVER_PORT=9092
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  h2:
+    console:
+      enabled: true
+
+springdoc:
+  swagger-ui.enabled: true
+  api-docs.enabled: true
+  
+server:
+  tomcat:
+    relaxed-query-chars: "%,{"
+
